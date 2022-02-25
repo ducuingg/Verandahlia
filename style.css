@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+
+body{
+    
+    font-family: 'Montserrat', Arial, sans-serif;
+    color:white;
+    padding: 0%;
+    margin: 0;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+.fondsite{
+    position:fixed;
+    top:0;
+    left:0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.logo{
+    z-index: 5;
+    width: 15%;
+    padding-left: 400px;
+    padding-top: 20px;
+}
+
+.menu{
+    display: block;
+    width: 22em;
+    background-color:rgb(0,0,0,.4) ;
+    margin: 15px;
+    padding: 10px;
+}
+.menu ul{
+    list-style-type: none;
+}
+.menu li{
+    margin-bottom: 35px;
+}
+
+.menu a{
+    position: relative;
+    text-decoration: none;
+    font-family: 'Montserrat', Arial, sans-serif;
+    color:white;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px black;
+}
+
+.menu a::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    background: white;
+    transition:width 0.2s ease-in-out;
+}
+
+.menu a:hover::after{
+    width:92%;
+}
+
+.slidehome{
+    display:block;
+    position:fixed;
+    bottom: 0;
+    right: 0;
+    width: 50em;
+    background-color: cadetblue;
+}
+.texthome{
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: white;
+    padding: 30px;
+    margin: 50px;
+    text-align: justify;
+    line-height: 2em;
+    border-left:3px solid white;
+}
+h1{
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size:xx-large;
+    letter-spacing: 3px;
+    font-weight:lighter;
+    color: white;
+    text-transform: uppercase;
+    border-right: 20px;
+    width: 30em;
+    padding-left: 50px;
+
+}
+
+h2{
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: white;
+    font-weight:lighter;
+    padding-left: 50px;
+
+}
+
+/* FOOTER*/
+.coord{
+    display: block;
+    position:fixed;
+    width:30em;
+    bottom:50px;
+    margin-left: 50px;
+    background-color:rgb(0,0,0,.5) ;
+}
+
+.textecoord{
+    color: white;
+    font-family: 'Montserrat', Arial, sans-serif;
+    padding-left: 100px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px black;
+}
+
+/* PROJET*/
+
+.projet{
+    display:block;
+    position:fixed;
+    bottom: 0;
+    right: 0;
+    width: 50em;
+    height:100%;
+    background-color: cadetblue;
+}
+
+.barreform{
+    background-color: white;
+    width: 528px;
+    height: 2px;
+    margin-left: 50px;
+    margin-top: -20px;
+}
+
+.texteprojet{
+    width:40em;
+    text-align: justify;
+    margin: auto;
+}
+
+/* USINE */
+
+.usine1{
+    width: 50%;
+    height: auto;
+    margin-top: 20px;
+}
