@@ -13,3 +13,24 @@ TL1
 //.from(slidehome,1,{y:-40,opacity:100}, '-=0.5')
 
 TL1.play();
+
+function image(src,width,height, alt){
+    let a = document.createElement("img");
+    let block=document.getElementById("galerie");
+
+    a.src=src;
+    a.width=width;
+    a.height=height;
+    a.alt=alt;
+   block.appendChild(a);
+}
+image("images/produits/verriere.jpg", 200,110,"verriere");
+image("images/produits/verriere.jpg", 200,110,"verriere");
+image("images/produits/verriere.jpg", 200,110,"verriere");
+image("images/produits/verriere.jpg", 200,110,"verriere");
+image("images/produits/verriere.jpg", 200,110,"verriere");
+image("images/produits/verriere.jpg", 200,110,"verriere");
+image("images/produits/verriere.jpg", 200,110,"verriere");
+image("images/produits/verriere.jpg", 200,110,"verriere");
+image("images/produits/verriere.jpg", 200,110,"verriere");
+image("images/produits/verriere.jpg", 200,110,"verriere");
