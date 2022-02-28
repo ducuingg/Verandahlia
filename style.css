@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     
     font-family: 'Montserrat', Arial, sans-serif;
@@ -7,7 +9,8 @@ body{
     padding: 0%;
     margin: 0;
     width: 100%;
-    overflow-y: hidden;
+    overflow-x: hidden;
+
 }
 
 .fondsite{
@@ -20,6 +23,7 @@ body{
 }
 
 .logo{
+    position:fixed;
     z-index: 5;
     width: 15%;
     padding-left: 400px;
@@ -27,11 +31,13 @@ body{
 }
 
 .menu{
+    position:fixed;
     display: block;
     width: 22em;
     background-color:rgb(0,0,0,.4) ;
     margin: 15px;
     padding: 10px;
+    top:150px
 }
 .menu ul{
     list-style-type: none;
@@ -63,14 +69,24 @@ body{
 .menu a:hover::after{
     width:92%;
 }
+.slide{
+    background-color: cadetblue;
+    scroll-snap-align: center;
 
+}
 .slidehome{
     display:block;
-    position:fixed;
+    float: right;
+    position: relative;
+    top:560px;
     bottom: 0;
     right: 0;
-    width: 50em;
+    height:100vh;
+    width: 60em;
     background-color: cadetblue;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 .texthome{
     font-family: 'Montserrat', Arial, sans-serif;
@@ -137,6 +153,7 @@ h2{
     background-color: white;
     width: 528px;
     height: 2px;
+    right: 0;
     margin-left: 50px;
     margin-top: -20px;
 }
@@ -163,4 +180,12 @@ h2{
     width: 70em;
     height:100%;
     background-color: cadetblue;
+}
+#galerie{
+    display: flex;
+    justify-content: space-around;
+    align-self: auto;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
 }

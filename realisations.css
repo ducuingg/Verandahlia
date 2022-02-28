@@ -120,6 +120,7 @@ h2{
 #galerie{
     display: flex;
     justify-content: space-around;
+    align-self: auto;
     flex-wrap: wrap;
     gap: 20px;
     padding: 10px;
