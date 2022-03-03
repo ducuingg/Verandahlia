@@ -69,11 +69,7 @@ body{
 .menu a:hover::after{
     width:92%;
 }
-.slide{
-    background-color: cadetblue;
-    scroll-snap-align: center;
 
-}
 .slidehome{
     display:block;
     float: right;
@@ -81,12 +77,9 @@ body{
     top:560px;
     bottom: 0;
     right: 0;
-    height:100vh;
     width: 60em;
     background-color: cadetblue;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    box-shadow: 10px 10px 20px black;
 }
 .texthome{
     font-family: 'Montserrat', Arial, sans-serif;
@@ -139,6 +132,14 @@ h2{
 
 /* PROJET*/
 
+.barreformprojet{
+    background-color: white;
+    width: 525px;
+    height: 2px;
+    margin-left: 50px;
+    margin-top: -20px;
+}
+
 .projet{
     display:block;
     position:fixed;
@@ -149,22 +150,48 @@ h2{
     background-color: cadetblue;
 }
 
-.barreform{
-    background-color: white;
-    width: 528px;
-    height: 2px;
-    right: 0;
-    margin-left: 50px;
-    margin-top: -20px;
-}
-
 .texteprojet{
     width:40em;
     text-align: justify;
     margin: auto;
 }
 
+.iconehand{
+    display: inline-flex;
+    width: 5em;
+    float: left;
+    margin-top: 70px;
+    padding: 40px;
+    filter:invert(95%);
+    -webkit-filter: invert(95%);
+    opacity:0;
+}
+.iconehand.active,.iconeprojet.active,.iconedraw.active{
+    transition-property: opacity;
+    transition-duration: 1.5s;
+    opacity:1;
+}
+
+.iconeprojet,.iconedraw{
+    display: inline-flex;
+    width: 4em;
+    float: left;
+    margin-top: -10px;
+    padding: 40px;
+    opacity:0;
+    filter:invert(95%);
+    -webkit-filter: invert(95%);
+}
+
 /* USINE */
+
+.barreformusine{
+    background-color: white;
+    width: 655px;
+    height: 2px;
+    margin-left: 50px;
+    margin-top: -20px;
+}
 
 .usine1{
     width: 50%;

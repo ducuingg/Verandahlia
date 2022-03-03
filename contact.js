@@ -1,6 +1,6 @@
 
 // ANIMATION 
-const barreform = document.querySelector(".barreform");
+/*const barreform = document.querySelector(".barreform");
 const map = document.querySelector("iframe");
 
 window.addEventListener('load',()=>{
