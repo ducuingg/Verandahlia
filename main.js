@@ -42,6 +42,8 @@ TL1.play();
 
 })*/
 
+
+// ANIMATION PROJET
 const sr = ScrollReveal();
 
 sr.reveal('h1',{
@@ -69,3 +71,16 @@ sr.reveal('.iconedraw',{
     reset: true,
     duration : 2000
 });
+
+
+//ZOOM FOND SCROLL
+
+$(window).scroll(function(){
+
+    var scroll = $(window).scrollTop();
+    $(".fondsite").css({
+        width:(100+scroll/200) + "%",
+        height:(100+scroll/200) + "%"
+    })
+
+})
