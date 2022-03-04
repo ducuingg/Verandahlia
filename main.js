@@ -2,7 +2,6 @@
 // ANIMATION 
 const logo = document.querySelector(".logo");
 const slidehome = document.querySelector(".slidehome");
-const h1 = document.querySelector("h1");
 const barreformprojet = document.querySelector(".barreformprojet");
 const iconehand = document.querySelector(".iconehand");
 const iconeprojet = document.querySelector(".iconeprojet");
@@ -16,7 +15,6 @@ const TL1 = new TimelineMax({paused:true});
 TL1
 .staggerFrom(logo,1,{y:-100,opacity:0},0.3)
 .staggerFrom(slidehome,2,{y:40,opacity:0},0.3,'-=0.8')
-.from(h1,2.5,{width:0,ease:"power1.out"})
 .from(barreformprojet,2.5,{width:0,ease:"power1.out"})
 .from(barreformusine,2.5,{width:0,ease:"power1.out"})
 .from(barreformcontact,2.5,{width:0,ease:"power1.out"})
@@ -24,7 +22,7 @@ TL1
 //.from(slidehome,1,{y:-40,opacity:100}, '-=0.5')
 TL1.play();
 
-window.addEventListener('scroll',()=>{
+/*window.addEventListener('scroll',()=>{
 
     const{scrollTop,clientHeight} = document.documentElement;
 
@@ -42,4 +40,32 @@ window.addEventListener('scroll',()=>{
      clientHeight *0.70){iconedraw.classList.add('active')}
 
 
-})
+})*/
+
+const sr = ScrollReveal();
+
+sr.reveal('h1',{
+    reset: true,
+    duration : 2000
+});
+
+sr.reveal('.iconehand',{
+    origin:'left',
+    distance:'50px',
+    reset: true,
+    duration : 2000
+});
+
+sr.reveal('.iconeprojet',{
+    origin:'left',
+    distance:'50px',
+    reset: true,
+    duration : 2000
+});
+
+sr.reveal('.iconedraw',{
+    origin:'left',
+    distance:'50px',
+    reset: true,
+    duration : 2000
+});
