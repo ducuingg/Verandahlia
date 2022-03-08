@@ -131,6 +131,42 @@ h2{
     text-shadow: 1px 1px 2px black;
 }
 
+/* ICONE SCROLL*/
+.icon-scroll,
+.icon-scroll:before{
+  position: absolute;
+  left: 50%
+}
+
+.icon-scroll{
+  width: 30px;
+  height: 50px;
+  margin-left: -20px;
+  top: 0.5%;
+  margin-top: -35px;
+  box-shadow: inset 0 0 0 1px #fff;
+  background: #fff;
+  border-radius: 25px
+}
+
+.icon-scroll:before{
+  content: '';
+  width: 4px;
+  height: 8px;
+  background: cadetblue;
+  margin-left: -2px;
+  top: 8px;
+  border-radius: 4px;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+}
+
+@keyframes scroll{
+  0%{opacity: 1;}
+  100%{opacity: 0; transform: translateY(20px);}
+}
+
 /* PROJET*/
 
 .barreformprojet{

@@ -47,8 +47,8 @@ TL1.play();
 const sr = ScrollReveal();
 
 sr.reveal('h1',{
-    reset: true,
-    duration : 2000
+    reset: false,
+    duration : 3000
 });
 
 sr.reveal('.iconehand',{
