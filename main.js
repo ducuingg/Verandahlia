@@ -83,9 +83,9 @@ sr.reveal('img.usine1',{
 });
 
 sr.reveal('.grille',{
-    origin:'bottom',
+    origin:'right',
     distance:'50px',
-    reset:false,
+    reset:true,
     duration:3000
 });
 
