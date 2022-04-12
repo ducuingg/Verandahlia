@@ -75,6 +75,19 @@ sr.reveal('.iconedraw',{
     duration : 2000
 });
 
+sr.reveal('img.usine1',{
+    origin:'right',
+    distance:'400px',
+    reset:true,
+    duration:2000
+});
+
+sr.reveal('.grille',{
+    origin:'bottom',
+    distance:'50px',
+    reset:false,
+    duration:3000
+});
 
 //ZOOM FOND SCROLL
 
@@ -87,3 +100,5 @@ $(window).scroll(function(){
     })
 
 })
+
+

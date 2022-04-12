@@ -15,12 +15,10 @@ body{
 
 .fondsite{
     position: fixed;
-    background-size:cover;
     top:0;
     left:0;
-    max-width: 100%;
-    height: auto;
-    z-index: -1;
+    width: 100%;
+    height: 100%;
 }
 
 .logo{
@@ -289,35 +287,102 @@ h2{
 /*Mobile*/
 @media screen and ( max-width: 64em) {
 
-    i{
-        visibility: visible;
-        display: block;
-        justify-content: flex-end;
-        font-size: 3em;
-        margin: 20px;
-        float: right;
-
+    header{
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
 
-    .logo{
-        
-        width: 10em;
+    .fondsite{
+        background-color: #fff;    
+    }
+
+    i{
+        display: flex;
+        font-size: 3em;
+        margin: auto;
+        margin-bottom: 0.5em;
+    }
+
+    .logo{      
+        width: 12em;
         position: relative;
+        padding: 1em;
+        z-index: 1;
+    }    
+
+    .logotop{
+        display: flex;
+        width: 100%;
+        justify-content: start;
+        gap: 13em;
     }
 
     .menu{
-        display: none;
+        overflow: hidden;
+        background-color: rgba(0,152,155,1);
+        position: absolute;
+        z-index: 1;
+        border-radius: 0 0 0 0;
+        width: 100%;
+        height: 0;
+        margin-top: -4em;
+        transition: 0.3s ease;
     }
 
+    .burger:hover+.menu{
+        height: 20em;
+        display: block;
+        z-index: 10;
+        position: absolute;
+    }
+
+    .burger{
+        z-index: 10;
+        position: absolute;
+        margin-top: -4em;
+        margin-left: 90%;
+    }
+    
    .slidehome{
        max-width: 100%;
+       top :auto;
+   }
+   .icon-scroll{
+       display: none;
    }
    p{
        max-width: 80%;
    }
    h1,h2{
-       max-width: 80%;
+       max-width: 90%;
+       margin-left: auto;
+       margin-right: auto;
+       text-align: center;
+       border: 0;
+       padding: 0;
    }
- 
-   
+
+   h1{
+       font-size: 1.7em;
+       text-align: center;
+   }
+   h1 br{
+       display: none;
+   }
+   .coord{
+       display: none;
+   }
+   .usine1{
+       margin-right: 25%;
+       margin-left: 25%;
+   }
+
+   .barreformprojet,.barreformreal,.barreformusine,.barreformcontact{
+       margin: auto;
+       width: 100%;
+       border: 0;
+       padding: 0;
+   }
+
 }
